@@ -1,8 +1,8 @@
 # Big Horn Sheep
 
-Repo for the official website of Toronto jazz-funk-electronic trio Big Horn Sheep.
+Repo for the official website of Toronto jazz-funk-electronic band Big Horn Sheep.
 
-[bighornsheepband.com]
+[http://bighornsheepband.com]
 
 ## Build
 
