@@ -1,5 +1,10 @@
-# Animating AngularJS Apps: ngView
+# Big Horn Sheep
 
-The code and demo for the [scotch.io](http://scotch.io) tutorial:
+Repo for the official website of Toronto jazz-funk-electronic trio Big Horn Sheep.
 
-[Animating AngularJS Apps: ngView](http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview)
+http://bighornsheepband.com
+
+## Build
+
+The site is made with HTML5 Boilerplate, Bootstrap 4, and angular.js. Page transitions are animated using animate.css.
+
