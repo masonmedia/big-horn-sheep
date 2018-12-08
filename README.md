@@ -2,7 +2,7 @@
 
 Repo for the official website of Toronto jazz-funk-electronic trio Big Horn Sheep.
 
-(bighornsheepband.com)
+[bighornsheepband.com]
 
 ## Build
 
