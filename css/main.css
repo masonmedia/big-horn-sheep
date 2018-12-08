@@ -1,0 +1,1016 @@
+
+
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    width: 100%;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* BASE STYLES
+============================================================================= */
+
+
+/* styles imported from angular punk tutorial */
+
+body {
+    font-family: Raleway, Futura, helvetica, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+a,
+a:focus,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: inherit;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.page {
+    bottom: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+
+/* PAGES
+============================================================================= */
+
+
+/* ANIMATIONS
+============================================================================= */
+
+/*.page.ng-leave {*/
+/*    z-index: 9999;*/
+/*}*/
+
+/*.page.ng-enter {*/
+/*    z-index: 8888;*/
+/*}*/
+
+
+/* page specific animations ------------------------ */
+
+
+/* home -------------------------- */
+
+/*.page-home.ng-leave {*/
+/*    -webkit-transform-origin: 0% 0%;*/
+/*    -ms-transform-origin: 0% 0%;*/
+/*    transform-origin: 0% 0%;*/
+/*    -webkit-animation: fadeOut 0.5s both ease-in-out;*/
+/*    animation: fadeOut 0.5s both ease-in-out;*/
+/*}*/
+
+/*.page-home.ng-enter {*/
+/*    -webkit-animation: fadeIn 0.5s both ease-in;*/
+/*    animation: fadeIn 0.5s both ease-in;*/
+/*    left: 20px;*/
+/*    opacity: 0;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*}*/
+
+
+/* about ------------------------ */
+
+/*.page-about.ng-leave,*/
+/*.page-sound.ng-leave,*/
+/*.page-vision.ng-leave,*/
+/*.page-dates.ng-leave,*/
+/*.page-contact.ng-leave {*/
+/*    -webkit-transform-origin: 0% 0%;*/
+/*    -ms-transform-origin: 0% 0%;*/
+/*    transform-origin: 0% 0%;*/
+/*    -webkit-animation: fadeOut 0.5s both ease-in-out;*/
+/*    animation: fadeOut 0.5s both ease-in-out;*/
+/*}*/
+
+/*.page-about.ng-enter,*/
+/*.page-sound.ng-enter,*/
+/*.page-vision.ng-enter,*/
+/*.page-dates.ng-enter,*/
+/*.page-contact.ng-enter {*/
+/*    -webkit-transform-origin: 0% 0%;*/
+/*    -ms-transform-origin: 0% 0%;*/
+/*    transform-origin: 0% 0%;*/
+/*    -webkit-animation: fadeIn 1s ease-in-out;*/
+/*    animation: fadeIn 1s ease-in-out;*/
+/*}*/
+
+
+/* sound ---------------------- */
+
+
+/*
+.page-sound.ng-leave {
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-animation: slideOutLeft .5s both ease-in-out;
+	animation: slideOutLeft 0.5s both ease-in-out;	
+}
+	
+.page-sound.ng-enter {
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-animation: slideInUp 1s both ease-in-out;
+	animation: slideInUp 1s both ease-in-out;
+}
+*/
+
+
+/* from new MM angularjs animation*/
+
+.ng-enter {
+	animation: fadeIn 1s ease-in;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+/* removing leave animation smooths transition */
+
+/*.ng-leave {*/
+/*	animation: fadeOut .2s ease-out;*/
+/*	-webkit-transform: translate3d(0, 0, 0);*/
+/*	transform: translate3d(0, 0, 0);*/
+/*}*/
+
+
+/* scale up */
+
+@keyframes scaleUp {
+    from {
+        opacity: 0.3;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+}
+
+@-webkit-keyframes scaleUp {
+    from {
+        opacity: 0.3;
+        -webkit-transform: scale(0.8);
+    }
+}
+
+
+/* slide in from the right */
+
+@keyframes slideInRight {
+    from {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideInRight {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+    to {
+        -webkit-transform: translateX(0);
+    }
+}
+
+
+/* slide in from the bottom */
+
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes slideInUp {
+    from {
+        -webkit-transform: translateY(100%);
+    }
+    to {
+        -webkit-transform: translateY(0);
+    }
+}
+
+
+/* slide in from the bottom */
+
+@keyframes slideOutLeft {
+    to {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes slideOutLeft {
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+
+/* rotate out newspaper */
+
+@-webkit-keyframes rotateOutNewspaper {
+    to {
+        -webkit-transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes rotateOutNewspaper {
+    to {
+        -webkit-transform: translateZ(-3000px) rotateZ(360deg);
+        transform: translateZ(-3000px) rotateZ(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* fade in */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* fade out */
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* general styles ---------------------- */
+
+
+/* height + width */
+
+.min-25 {
+    height: 25vh;
+}
+
+.min-50 {
+    height: 50vh;
+}
+
+.min-75 {
+    height: 75vh;
+}
+
+.min-100 {
+    height: 100vh;
+}
+
+
+/* utilities ---------------------- */
+
+
+/* box + text shadow */
+
+.bs {
+    -webkit-box-shadow: 5px 5px 10px grey;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.ts {
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+.break {
+    display: table;
+}
+
+.text-pink {
+    color: hotpink;
+}
+
+
+/* text ---------------------- */
+
+.font-bungee {
+    font-family: 'Bungee Shade', cursive, raleway, sans-serif;
+}
+
+.font-raleway {
+    font-family: 'Raleway', Avenir, sans-serif;
+}
+
+h3,
+p {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.site-title,
+banner-heading {
+    font-size: 12vmin;
+    line-height: 90%;
+}
+
+.site-title,
+.banner-heading {
+    /*   text-align: center;*/
+    color: #fff;
+    white-space: nowrap;
+    font-size: 12vw;
+    font-weight: 900;
+    position: relative;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+    -ms-transform: skew(0, -6.7deg);
+    -webkit-transform: skew(0, -6.7deg);
+    transform: skew(0, -6.7deg);
+    -o-transition-property: font-size;
+    -webkit-transition-property: font-size;
+    transition-property: font-size;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.heading {
+    color: #fff;
+    font-size: 12vmin;
+    font-family: 'Bungee Shade', cursive, raleway, sans-serif;
+    white-space: wrap;
+    font-weight: 900;
+    position: relative;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.6);
+    -ms-transform: skew(0, -4.7deg);
+    -webkit-transform: skew(0, -4.7deg);
+    transform: skew(0, -4.7deg);
+    -o-transition-property: font-size;
+    -webkit-transition-property: font-size;
+    transition-property: font-size;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    z-index: 1000;
+}
+
+.skew {
+    position: relative;
+    -ms-transform: skew(0, -4.7deg);
+    -webkit-transform: skew(0, -4.7deg);
+    transform: skew(0, -4.7deg);
+    -o-transition-property: font-size;
+    -webkit-transition-property: font-size;
+    transition-property: font-size;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    z-index: 1000;
+}
+
+
+/* nav ---------------------- */
+
+.navbar.navbar-1 .navbar-toggler-icon {
+    background: url('/img/bhs-fa-th-icon-45px.png') center;
+    background-size: 100%;
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=FFFFFF');
+}
+
+.navbar,
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar>li>a,
+.nav-link {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    -ms-transform: skew(0, -4.7deg);
+    -webkit-transform: skew(0, -4.7deg);
+    transform: skew(0, -4.7deg);
+    -o-transition-property: font-size;
+    -webkit-transition-property: font-size;
+    transition-property: font-size;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.navbar-toggler:hover {
+    background: transparent !important;
+}
+
+
+/* navbar change bg color on scroll (use .scrolled on any class) */
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+
+/* backgrounds ---------------------- */
+
+.bg-banner {
+    background: url(/img/bhs-tvs-effect.jpg) center top;
+    background: url(/img/bhs-volume-max.jpg) center top;
+    background: url(/img/bhs-vinyl-effect.jpg) center top;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.bg-about {
+    background: url(/img/bhs-warhol-effect-2.jpg) center;
+    background: url(/img/bhs-green-lights.jpg) center;
+    background: url(/img/bhs-street-billboard-1.jpg) center top;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+
+/* band photos */
+
+.bg-band {
+    background: url(/img/bhs-bw-band-pic.jpg) center;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.bg-mason {
+    background: url(/img/bhs-mason-4.jpg) center right;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.bg-whitford {
+    background: url(/img/bhs-neil-concentrate.jpg) center center;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.bg-claxton {
+    background: url(/img/bhs-claxton-up.jpg) center top;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.bg-sound {
+    background: url(/img/bhs-bw-tape-input.jpg) center;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.bg-vision {
+    background: url(/img/bhs-green-lights.jpg) center;
+    background-size: contain;
+    min-height: 50vh;
+}
+
+.bg-dates {
+    background: url(/img/bhs-pinball-min.jpg) center;
+    background: url(/img/bhs-hawaii-fb-1.png) center;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+
+/* track imgs ---------------------- */
+
+.bg-undesireable {
+    background: url(/img/bhs-undesireable.jpg) center;
+    background-size: cover;
+}
+
+
+/* footer imgs ---------------------- */
+
+.bg-stage {
+    background: url(/img/bhs-green-lights.jpg) center;
+    background-size: cover;
+}
+
+.bg-tv {
+    background: url(/img/bhs-tvs-effect.jpg) center;
+    background-size: cover;
+}
+
+.bg-footer-tv {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/bhs-tvs-effect.jpg) center;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/bhs-tvs-effect.jpg) center;
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/bhs-tvs-effect.jpg) center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/bhs-tvs-effect.jpg) center;
+    background-size: cover;
+}
+
+.bg-contact {
+    background: url(/img/bhs-asteroid-poster.jpg) center;
+    background-size: cover;
+}
+
+
+/* jumbotrons ---------------------- */
+
+.container-fluid .jumbotron,
+.jumbotron {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    border: 0;
+    border-radius: 0;
+}
+
+.bhs-divider {
+    height: 100px;
+    width: 100%;
+    -webkit-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+}
+
+.bhs-divider {
+    background: limegreen;
+}
+
+
+/* jumbotron angle overlay */
+
+.bhs-header-angle {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 5px;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    -webkit-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+}
+
+
+/* page-home front page ---------------------- */
+
+
+/* page-sound ---------------------- */
+
+iframe {
+    width: 100%;
+    min-height: 100vh;
+}
+
+span {
+    font-weight: 900;
+}
+
+.pattern {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23e8e8e8' fill-opacity='0.61' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+/* page-vision ---------------------- */
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+}
+
+.gallery {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.modal-content {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ede1c9), color-stop(20%, #fef8e2), color-stop(60%, #f2ebde));
+    background: -webkit-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+    background: -o-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+    background: linear-gradient(to bottom, #ede1c9, #fef8e2 20%, #f2ebde 60%);
+    -webkit-box-shadow: 3px 3px 5px #444;
+    box-shadow: 3px 3px 5px #444;
+    -webkit-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+
+/* baguette box buttons */
+
+.baguetteBox-button {
+    background-color: transparent !important;
+    border: none;
+}
+
+
+/* footer fa ---------------------- */
+
+#footer .heading {
+    font-size: 35px;
+}
+
+.copyright {
+    font-size: 5vmin;
+}
+
+
+/* media queries ---------------------- */
+
+@media (max-width: 992px) {
+    .navbar {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .navbar>li>a,
+    .nav-link {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .display-4 {
+        font-size: 3rem;
+    }
+    .o-0 {
+        -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+        order: 0;
+    }
+    .o-1 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .table {
+        display: table;
+    }
+    .gallery {
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    div[class*="bg-"] {
+        background-attachment: scroll;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    iframe {
+        width: 100%;
+        min-height: 50vh;
+    }
+    .gallery {
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(-o-min-device-pixel-ratio: 5/4),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+

@@ -1,0 +1,78 @@
+
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Page Not Found</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Icons-->
+      <link rel="apple-touch-icon" href="/BHS-apple-touch-icon.png">
+      <link rel="short icon" href="/bhs-atari-green.ico">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,900|Bungee+Shade" rel="stylesheet">
+      <!-- JS -->
+      <!-- load angular, ngRoute, ngAnimate -->
+      <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+      <script src="app.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <style>
+         * {
+         line-height: 1.2;
+         margin: 0;
+         }
+		  
+         html {
+         color: #888;
+         display: table;
+         font-family: sans-serif;
+         height: 100%;
+         text-align: center;
+         width: 100%;
+         }
+		  
+         body {
+         display: table-cell;
+         vertical-align: middle;
+         margin: 2em auto;
+         }
+		  
+         h1 {
+         color: #555;
+         font-size: 2em;
+         font-weight: 400;
+         }
+		  
+         p {
+         margin: 0 auto;
+         width: 280px;
+         }
+		  
+         @media only screen and (max-width: 280px) {
+         body, p {
+         width: 95%;
+         }
+			 
+         h1 {
+         font-size: 1.5em;
+         margin: 0 0 0.3em;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <!--heder-->
+      <div ng-include='"/header.html"'></div>
+      <!-- jumbotron -->
+      <div class="d-flex justify-content-end align-items-center jumbotron jumbotron-fluid p-5 m-0 min-100 bg-banner text-white text-left">
+         <!--main-->
+         <h1 class="heading w-100">OOPS!<span class="break m-0">Page Not Found</span><span class="break">Please Return</span><span class="break text-success"> <a href="http://www.bighornsheepband.com">Home</a></span>
+         </h1>
+      </div>
+   </body>
+</html>
+<!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
+
